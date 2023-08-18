@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Gráfico de Barras</title>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+<body>
+    <h1>Gráfico de Barras</h1>
+    <div id="graph"></div>
+    
+    <script>
+        var graphJSON = {{ graphJSON | safe }};
+        Plotly.newPlot('graph', graphJSON);
+    </script>
+</body>
+</html>
